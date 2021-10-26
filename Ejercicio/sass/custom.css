@@ -12027,15 +12027,15 @@ fieldset:disabled .btn {
   }
 }
 
-.download:nth-child(1) {
+.card:nth-child(1) {
   margin-top: 0%;
 }
 
-.download:nth-child(2) {
+.card:nth-child(2) {
   margin-top: 10%;
 }
 
-.download:nth-child(3) {
+.card:nth-child(3) {
   margin-top: 15%;
 }
 
