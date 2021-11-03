@@ -49,9 +49,9 @@
 
                        <!-- COLUMNA TEXTO 1 -->
 
-        <div class="row">
-            <div class="col-12 col-lg-5 order-lg-first mt-5 text-lg-start text-sm-center texto">
-                <h1 class="ms-5 mt-5">A Simple Bookmark <br> Manager</h1>
+        <div class="row" id="simple">
+            <div class="col-12 col-lg-5 order-lg-first mt-5 text-lg-start text-sm-center texto" >
+                <h1 class="ms-5 mt-5" >A Simple Bookmark <br> Manager</h1>
                 <p class="ms-5 text-muted">A clean and simple interface to organize your favorite websites.  Open a new browser tab and see your sites load instantly. Try it for free.</p>
                
                 <button type="button" class="btn btn-primary mt-4 ms-5 shadow p-3"> Get it on Chrome</button>
@@ -76,19 +76,54 @@
 
                         <!-- TABS + HOVER CON SASS -->           
 
-            <div class="container col-lg-12 mt-3" >
-                <ul class="nav nav-tabs nav-fill mb-3 d-flex flex-md-row justify-content-center flex-column">
-                    <li class="nav-item tab1">
-                      <a class="nav-link text-black" data-mdb-toggle="tab" href="#" aria-selected="true">Simple Bookmarking</a>
+        <div class="container col-lg-12 mt-3" >
+                <ul class="nav nav-tabs nav-fill mb-3 d-flex flex-md-row justify-content-center flex-column" id="myTab" role="tablist">
+                    <li class="nav-item  tab1">
+                      <a class="nav-link text-black" data-mdb-toggle="tab" href="#simple" aria-selected="true" id="home-tab">Simple Bookmarking</a>
                     </li>
                     <li class="nav-item tab1">
-                      <a class="nav-link text-black" href="#">Speedy SearchingLink</a>
+                      <a class="nav-link text-black" href="#"  id="search-tab" data-bs-toggle="tab" data-bs-target="#search" type="button" role="tab" aria-controls="search" aria-selected="false">Speedy SearchingLink</a>
                     </li>
                     <li class="nav-item tab1">
-                      <a class="nav-link text-black" href="#">Easy SharingLink</a>
+                      <a class="nav-link text-black" href="#" id="sharing-tab" data-bs-toggle="tab" data-bs-target="#sharing" type="button" role="tab" aria-controls="sharing" aria-selected="false">Easy SharingLink</a>
                     </li>
                     
-                  </ul>
+                </ul>
+
+            <div class="tab-content" id="myTabContent">
+                               <!-- UNO -->
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                </div>
+
+                                <!-- DOS -->
+            <div class="tab-pane fade" id="search" role="tabpanel" aria-labelledby="search-tab">
+
+                <div class="row">
+                <div class="col-sm-12 col-lg-8 mt-5 d-flex justify-content-center " >
+                <img src="imagen/illustration-features-tab-2.svg" alt="" class="img-fluid ms-lg-5 mb-lg-4" width="500" height="200"  id="speedy">
+                </div>
+                <div class="col-12 col-lg-4 mt-5 text-lg-start ">
+                <h1 class="ms-lg-5 mt-5" id ="click">Intelligent search</h1>
+                <p class="ms-lg-5 text-muted" >Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+                <button type="button" class="btn btn-primary mt-4 ms-5 shadow p-3"> More info </button>
+                </div>
+                </div>
+            </div>
+                              <!-- TRES -->
+            <div class="tab-pane fade" id="sharing" role="tabpanel" aria-labelledby="sharing-tab">
+                <div class="row">
+                <div class="col-sm-12 col-lg-8 mt-5 d-flex justify-content-center " >
+                <img src="imagen/illustration-features-tab-3.svg" alt="" class="img-fluid ms-lg-5 mb-lg-4" width="500" height="200" >
+                </div>
+                <div class="col-12 col-lg-4 mt-5 text-lg-start ">
+                <h1 class="ms-lg-5 mt-5" id ="click">Share your bookmarks</h1>
+                <p class="ms-lg-5 text-muted" >Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
+                <button type="button" class="btn btn-primary mt-4 ms-5 shadow p-3"> More info </button>
+                </div>
+                </div>
+            </div>
+
+            </div>
             </div>
 
                        
@@ -104,8 +139,8 @@
                            <!-- COLUMNA TEXTO 2 -->
 
             <div class="col-12 col-lg-4 mt-5 text-lg-start ">
-                <h1 class="ms-lg-5 mt-5">Bookmark in one click</h1>
-                <p class="ms-lg-5 text-muted">organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+                <h1 class="ms-lg-5 mt-5" id ="click">Bookmark in one click</h1>
+                <p class="ms-lg-5 text-muted" >organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
                 <button type="button" class="btn btn-primary mt-4 ms-5 shadow p-3"> More info </button>
             </div>
         </div>
@@ -260,7 +295,7 @@
         
             <div class="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-start">
                 <ul class="nav nav-pills flex-column flex-lg-row">
-                <li class="nav-item item1">
+                <li class="nav-item  item1">
                 <a class="nav-link  text-white" aria-current="page" href="#">FEATURES</a>
                 </li>
                 <li class="nav-item  item1">
@@ -307,8 +342,8 @@
                         form.classList.add('was-validated')
                     }, false)
                     })
-                })() 
-            
+                })() ;
+
             
             </script>
             <!-- ----------------------------------------------------------- -->
